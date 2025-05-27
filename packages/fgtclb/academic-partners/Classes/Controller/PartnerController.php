@@ -155,9 +155,19 @@ class PartnerController extends ActionController
         }
         ksort($pages);
 
+        $roles = [];
+        foreach ($partnerships as $partnership) {
+            $role = $partnership->getRole();
+            if ($role !== null) {
+                $roles[$role->getUid()] = $role;
+            }
+        }
+
         $this->view->assignMultiple([
             'data' => $contentElementData,
             'pages' => $pages,
+            'partnerships' => $partnerships,
+            'partnershipRoles' => $roles,
         ]);
 
         return $this->htmlResponse();

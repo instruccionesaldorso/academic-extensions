@@ -25,6 +25,14 @@
                     </items>
                 </config>
             </settings.doktype>
+            <settings.groupByRole>
+                <label>LLL:EXT:academic_partners/Resources/Private/Language/locallang_be.xlf:flexform.groupByRole.label</label>
+                <description>LLL:EXT:academic_partners/Resources/Private/Language/locallang_be.xlf:flexform.groupByRole.description</description>
+                <config>
+                    <type>check</type>
+                    <renderType>checkboxToggle</renderType>
+                </config>
+            </settings.groupByRole>
         </el>
     </ROOT>
 </T3DataStructure>

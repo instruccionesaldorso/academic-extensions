@@ -4,11 +4,48 @@
     data-namespace-typo3-fluid="true"
 >
     <div class="academic-contacts4pages">
-        <f:for each="{pages}" as="page">
-            <f:render
-                partial="Pages/ListItem"
-                arguments="{page: page}"
-            />
-        </f:for>
+        <f:if condition="{settings.groupByRole}">
+            <f:then>
+                <f:if condition="{partnershipRoles}">
+                    <f:then>
+                        <f:for each="{partnershipRoles}" as="role">
+                            <f:if condition="{role.description}">
+                                <f:then>
+                                    <p>{role.description}</p>
+                                </f:then>
+                                <f:else>
+                                    <p>{role.name}</p>
+                                </f:else>
+                            </f:if>
+
+                            <f:for each="{partnerships}" as="partnership">
+                                <f:if condition="{partnership.role} == {role}">
+                                    <f:render
+                                        partial="Partnerships/ListItem"
+                                        arguments="{partnership: partnership}"
+                                    />
+                                </f:if>
+                            </f:for>
+                        </f:for>
+                    </f:then>
+                    <f:else>
+                        <f:for each="{partnerships}" as="partnership">
+                            <f:render
+                                partial="Partnerships/ListItem"
+                                arguments="{partnership: partnership}"
+                            />
+                        </f:for>
+                    </f:else>
+                </f:if>
+            </f:then>
+            <f:else>
+                <f:for each="{pages}" as="page">
+                    <f:render
+                        partial="Pages/ListItem"
+                        arguments="{page: page}"
+                    />
+                </f:for>
+            </f:else>
+        </f:if>
     </div>
 </html>
