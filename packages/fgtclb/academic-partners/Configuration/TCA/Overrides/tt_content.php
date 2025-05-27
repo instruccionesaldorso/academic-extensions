@@ -15,7 +15,7 @@ defined('TYPO3') or die;
         'tt_content',
         'CType',
         'academic',
-        'LLL:EXT:academic_partners/Resources/Private/Language/locallang_be.xlfcontent.ctype.group.label',
+        'LLL:EXT:academic_partners/Resources/Private/Language/locallang_be.xlf:content.ctype.group.label',
     );
 
     // Plugin: academicpartners_list
@@ -23,7 +23,7 @@ defined('TYPO3') or die;
         [
             'label' => 'LLL:EXT:academic_partners/Resources/Private/Language/locallang_be.xlf:plugin.partner_list.title',
             'value' => 'academicpartners_list',
-            'icon' => 'EXT:academic_partners/Resources/Public/Icons/Extension.svg',
+            'icon' => 'academic-partners',
             'group' => 'academic',
         ],
         ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
@@ -40,7 +40,7 @@ defined('TYPO3') or die;
         [
             'label' => 'LLL:EXT:academic_partners/Resources/Private/Language/locallang_be.xlf:plugin.partner_map.title',
             'value' => 'academicpartners_map',
-            'icon' => 'EXT:academic_partners/Resources/Public/Icons/Extension.svg',
+            'icon' => 'academic-partners',
             'group' => 'academic',
         ],
         ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
@@ -57,7 +57,7 @@ defined('TYPO3') or die;
         [
             'label' => 'LLL:EXT:academic_partners/Resources/Private/Language/locallang_be.xlf:plugin.partner_partnershipslist.title',
             'value' => 'academicpartners_partnershipslist',
-            'icon' => 'EXT:academic_partners/Resources/Public/Icons/Extension.svg',
+            'icon' => 'academic-partners',
             'group' => 'academic',
         ],
         ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
@@ -69,7 +69,7 @@ defined('TYPO3') or die;
         [
             'label' => 'LLL:EXT:academic_partners/Resources/Private/Language/locallang_be.xlf:plugin.partner_partnershipsteaser.title',
             'value' => 'academicpartners_partnershipsteaser',
-            'icon' => 'EXT:academic_partners/Resources/Public/Icons/Extension.svg',
+            'icon' => 'academic-partners',
             'group' => 'academic',
         ],
         ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
