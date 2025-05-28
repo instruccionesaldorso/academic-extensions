@@ -155,7 +155,14 @@
                 <source>Only program pages</source>
                 <target>Nur Programmseiten</target>
             </trans-unit>
-
+            <trans-unit id="flexform.groupByRole.label">
+                <source>Grouped by role</source>
+                <target>Gruppiert nach Rolle</target>
+            </trans-unit>
+            <trans-unit id="flexform.groupByRole.description">
+                <source>Decide whether output should be grouped by role or not</source>
+                <target>Entscheiden Sie, ob die Ausgabe nach Rolle gruppiert werden soll oder nicht</target>
+            </trans-unit>
             <!-- TCA tabs and  palettes -->
 
             <trans-unit id="pages.div.partner_information">

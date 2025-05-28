@@ -131,7 +131,12 @@
             <trans-unit id="flexform.doktype.2">
                 <source>Only program pages</source>
             </trans-unit>
-
+            <trans-unit id="flexform.groupByRole.label">
+               <source>Grouped by role</source>
+            </trans-unit>
+            <trans-unit id="flexform.groupByRole.description">
+                <source>Decide whether output should be grouped by role or not</source>
+            </trans-unit>
             <!-- Pages table: TCA tabs and palettes -->
 
             <trans-unit id="pages.div.partner_information">
